@@ -20,7 +20,7 @@ router.get("/all", async (req, res) => {
     }
 })
 
-const userId = "6642e8a081c668373560f2d0";
+const userId = "6646dafd3da9da4f0e0d4213";
 //get posts belong to particular user
 router.get("/user/all", async (req, res) => {
     try {
