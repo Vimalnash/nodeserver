@@ -11,10 +11,11 @@ dotenv.config();
 //Setting PORT / Setting Envs
 // const PORT = 8080;
 const PORT = process.env.PORT;
+const MONGO_URL_LOCAL = process.env.MONGO_URL_LOCAL;
 const MONGO_URL_AtlasCloud = process.env.MONGO_URL_AtlasCloud;
 
 //Database Connection
-dbConnection(MONGO_URL_AtlasCloud);
+dbConnection(MONGO_URL_LOCAL, MONGO_URL_AtlasCloud);
 // dbConnection();
 
 //Initializing Express Server
